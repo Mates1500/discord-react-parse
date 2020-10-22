@@ -1,0 +1,19 @@
+{
+  "GuildId": 636620229094539274,
+  "ReactRemaps": [
+    {
+      "ReactId": "<:pepega:636620752610787338>",
+      "Remaps": [ "Tank", "ProtWarrior" ]
+    },
+    {
+      "ReactId": "<:sonic_dab:734801082416627796>",
+      "Remaps": [ "Healer", "HolyPriest" ]
+    },
+    {
+      "ReactId": "<:link_rage:734799898649559061>",
+      "Remaps": [ "Healer", "RestoShaman" ]
+    }
+  ],
+  "IgnoreUserIds": [ 141216371550715904 ],
+  "ResultFileLocation": "C:\\Users\\mates\\Desktop\\result.csv"
+}

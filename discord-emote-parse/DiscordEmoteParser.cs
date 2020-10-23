@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -24,7 +25,11 @@ namespace discord_emote_parse
 
         private static IConfiguration BuildConfig()
         {
-            return new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory())
+            var currentAssembly = Assembly.GetEntryAssembly();
+            if (currentAssembly is null)
+                throw new NullReferenceException("This should absolutely never happen.");
+
+            return new ConfigurationBuilder().SetBasePath(Path.GetDirectoryName(currentAssembly.Location))
                 .AddJsonFile("config.json")
                 .AddJsonFile("config.secret.json")
                 .Build();

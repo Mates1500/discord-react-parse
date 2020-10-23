@@ -96,7 +96,7 @@ namespace discord_emote_parse
 
         private static void CreateCsvFile(List<RemapResult> results, string filename)
         {
-            var maxNumberOfRemaps = results.OrderBy(x => x.Remaps.Length).Select(x => x.Remaps.Length).First();
+            var maxNumberOfRemaps = results.OrderByDescending(x => x.Remaps.Length).Select(x => x.Remaps.Length).First();
             using (var f = new StreamWriter(filename, true))
             {
                 var firstLine = new StringBuilder("Name");
@@ -121,9 +121,17 @@ namespace discord_emote_parse
         {
             Console.WriteLine("Connected!");
 
-            var result = await GetReactionRemapsForMessage(ulong.Parse(_config["GuildId"]), _channelId, _requestedMessageId);
+            try
+            {
+                var result = await GetReactionRemapsForMessage(ulong.Parse(_config["GuildId"]), _channelId,
+                    _requestedMessageId);
 
-            CreateCsvFile(result, _config["ResultFileLocation"]);
+                CreateCsvFile(result, _config["ResultFileLocation"]);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"{e.Message} - {e.StackTrace}");
+            }
 
             _endProgram.Release();
         }

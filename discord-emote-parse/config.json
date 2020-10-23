@@ -1,19 +1,71 @@
 {
-  "GuildId": 636620229094539274,
+  "GuildId": 617491451634384956,
   "ReactRemaps": [
     {
-      "ReactId": "<:pepega:636620752610787338>",
-      "Remaps": [ "Tank", "ProtWarrior" ]
+      "ReactId": "<:Tank:580801859221192714>",
+      "Remaps": [ "Tank", "Warrior" ]
     },
     {
-      "ReactId": "<:sonic_dab:734801082416627796>",
-      "Remaps": [ "Healer", "HolyPriest" ]
+      "ReactId": "<:Warrior:579532030153588739>",
+      "Remaps": [ "DPS", "Warrior" ]
     },
     {
-      "ReactId": "<:link_rage:734799898649559061>",
-      "Remaps": [ "Healer", "RestoShaman" ]
+      "ReactId": "<:Rogue:579532030086217748>",
+      "Remaps": [ "DPS", "Rogue" ]
+    },
+    {
+      "ReactId": "<:Hunter:579532029880827924>",
+      "Remaps": [ "DPS", "Hunter" ]
+    },
+    {
+      "ReactId": "<:Mage:579532030161977355>",
+      "Remaps": [ "DPS", "Mage" ]
+    },
+    {
+      "ReactId": "<:Warlock:579532029851336716>",
+      "Remaps": [ "DPS", "Warlock" ]
+    },
+    {
+      "ReactId": "<:Priest:579532029901799437>",
+      "Remaps": [ "Healer", "Priest" ]
+    },
+    {
+      "ReactId": "<:Shadow:597921879159734284>",
+      "Remaps": [ "DPS", "Priest" ]
+    },
+    {
+      "ReactId": "<:HolyPaladin:606344274472206337>",
+      "Remaps": [ "Healer", "Paladin" ]
+    },
+    {
+      "ReactId": "<:Retri:597942199753244712>",
+      "Remaps": [ "DPS", "Paladin" ]
+    },
+    {
+      "ReactId": "<:ProtPaladin:607373286388531230>",
+      "Remaps": [ "Tank", "Paladin" ]
+    },
+    {
+      "ReactId": "<:RestoDruid:606343445803696157>",
+      "Remaps": [ "Healer", "Druid" ]
+    },
+    {
+      "ReactId": "<:Bear:603627895956439079>",
+      "Remaps": [ "Tank", "Druid" ]
+    },
+    {
+      "ReactId": "<:Feral:597939529592078336>",
+      "Remaps": [ "DPS", "Druid" ]
+    },
+    {
+      "ReactId": "<:Balance:597939529806249996>",
+      "Remaps": [ "DPS", "Druid" ]
+    },
+    {
+      "ReactId": "<:Absence:612343589070045200>",
+      "Remaps": ["Absent"] 
     }
   ],
-  "IgnoreUserIds": [ 141216371550715904 ],
+  "IgnoreUserIds": [ 579155972115660803 ],
   "ResultFileLocation": "C:\\Users\\mates\\Desktop\\result.csv"
 }

@@ -124,8 +124,6 @@ namespace discord_emote_parse
 
         private async Task ReadyAsync()
         {
-            Console.WriteLine("Connected!");
-
             try
             {
                 var result = await GetReactionRemapsForMessage(ulong.Parse(_config["GuildId"]), _channelId,
@@ -137,6 +135,8 @@ namespace discord_emote_parse
             {
                 Console.WriteLine($"{e.Message} - {e.StackTrace}");
             }
+
+            Console.WriteLine("Successfully finished.");
 
             _endProgram.Release();
         }

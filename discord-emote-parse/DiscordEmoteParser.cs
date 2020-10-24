@@ -130,13 +130,13 @@ namespace discord_emote_parse
                     _requestedMessageId);
 
                 CreateCsvFile(result, _config["ResultFileLocation"]);
+
+                Console.WriteLine("Successfully finished.");
             }
             catch (Exception e)
             {
                 Console.WriteLine($"{e.Message} - {e.StackTrace}");
             }
-
-            Console.WriteLine("Successfully finished.");
 
             _endProgram.Release();
         }
